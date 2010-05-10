@@ -94,13 +94,15 @@ FreeAgent = {
       task, new_task } 
   */
   postTime: function(options) {
+    alert('test');
     if (options.timer.duration < 60) { 
       return; // less than a minute! 
     }
-    var remoteUrl = this.remoteUrl("timeslips", ("project_id=" + this.currentProject.id));
+    var remoteUrl = this.remoteUrl("timeslips");
     var now = new Date();
     var timeslipXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><timeslip>" + 
-                      "<dated-on>" + now.toUTCString() + "</dated-on>" + 
+                      "<dated-on>" + now.toISOString() + "</dated-on>" + 
+                      "<project-id type=\"integer\">" + this.currentProject.id + "</project-id>" +
                       "<user-id>" + this.userID + "</user-id>" + 
                       "<hours>" + options.timer.asHours() + "</hours>" + 
                       "<comment>" + options.comment + "</comment>";
@@ -127,6 +129,12 @@ FreeAgent = {
         GUI.showPosted();
         Timer.reset();
       },
+      // debug
+      error: function(xml, status, error) {
+        //alert("xml: " + xml.responseText);
+        //alert("error status: " + status);
+        //alert("error: " + error);
+      }
     }); 
   },
   
