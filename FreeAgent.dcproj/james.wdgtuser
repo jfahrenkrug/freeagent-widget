@@ -3,29 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>Breakpoints</key>
-	<dict/>
+	<dict>
+		<key>widget.wdgt/free_agent.js:103</key>
+		<string>-postTime</string>
+	</dict>
 	<key>BreakpointsFrame</key>
 	<string>603 48 404 338 0 0 1440 878 </string>
+	<key>CYLastWindowPosition</key>
+	<string>{854, 326}</string>
 	<key>ContentSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
 		<integer>8</integer>
 		<key>SplitViewConfig</key>
 		<integer>3</integer>
-		<key>_collapsingFrameDimension</key>
-		<real>0.0</real>
 		<key>_indexOfCollapsedView</key>
 		<integer>0</integer>
-		<key>_percentageOfCollapsedView</key>
-		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {981, 312}}</string>
-			<string>{{0, 322}, {981, 427}}</string>
+			<string>{{0, 0}, {981, 402}}</string>
+			<string>{{0, 412}, {981, 337}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>2</integer>
+	<integer>5</integer>
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
@@ -68,12 +69,8 @@
 	<string>809 29 479 226 0 0 1440 878 </string>
 	<key>MainSplitViewGeometry</key>
 	<dict>
-		<key>_collapsingFrameDimension</key>
-		<real>0.0</real>
 		<key>_indexOfCollapsedView</key>
 		<integer>0</integer>
-		<key>_percentageOfCollapsedView</key>
-		<real>0.0</real>
 		<key>sizes</key>
 		<array>
 			<string>{{0, 0}, {244, 770}}</string>
@@ -88,16 +85,12 @@
 		<integer>5</integer>
 		<key>SplitViewConfig</key>
 		<integer>3</integer>
-		<key>_collapsingFrameDimension</key>
-		<real>0.0</real>
 		<key>_indexOfCollapsedView</key>
 		<integer>0</integer>
-		<key>_percentageOfCollapsedView</key>
-		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {246, 378}}</string>
-			<string>{{0, 388}, {246, 361}}</string>
+			<string>{{0, 0}, {246, 353}}</string>
+			<string>{{0, 363}, {246, 386}}</string>
 		</array>
 	</dict>
 	<key>Objects view expanded items</key>
@@ -141,5 +134,24 @@
 	<array>
 		<string>back</string>
 	</array>
+	<key>Widget</key>
+	<dict>
+		<key>Objects view expanded items</key>
+		<array>
+			<array>
+				<integer>0</integer>
+			</array>
+		</array>
+		<key>Objects view last selections</key>
+		<array>
+			<array>
+				<integer>5</integer>
+			</array>
+		</array>
+		<key>Visible StackLayout Views</key>
+		<array>
+			<string>front</string>
+		</array>
+	</dict>
 </dict>
 </plist>

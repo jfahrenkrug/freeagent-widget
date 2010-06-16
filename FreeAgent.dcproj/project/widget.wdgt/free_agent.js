@@ -37,7 +37,7 @@ FreeAgent = {
   },
   
   loadUser: function() {
-    this.loadXML("users", function(xml) {
+    this.loadXML("company/users", function(xml) {
       FreeAgent.userID = xml.find("user<email:contains(" + FreeAgent.email + ")").find("id").text();
       Logger.log("loaded user id: " + FreeAgent.userID);
     });
@@ -102,8 +102,8 @@ FreeAgent = {
     var now = new Date();
     var timeslipXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><timeslip>" + 
                       "<dated-on>" + now.toISOString() + "</dated-on>" + 
-                      "<project-id type=\"integer\">" + this.currentProject.id + "</project-id>" +
-                      "<user-id>" + this.userID + "</user-id>" + 
+                      "<project-id type=\"integer\">" + FreeAgent.currentProject.id + "</project-id>" +
+                      "<user-id>" + FreeAgent.userID + "</user-id>" + 
                       "<hours>" + options.timer.asHours() + "</hours>" + 
                       "<comment>" + options.comment + "</comment>";
     // set the task
@@ -131,9 +131,9 @@ FreeAgent = {
       },
       // debug
       error: function(xml, status, error) {
-        //alert("xml: " + xml.responseText);
-        //alert("error status: " + status);
-        //alert("error: " + error);
+        Logger.log("xml: " + xml.responseText);
+        Logger.log("error status: " + status);
+        Logger.log("error: " + error);
       }
     }); 
   },
